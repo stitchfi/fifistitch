@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+<filter id="f" x="-40%" y="-40%" width="180%" height="180%" filterUnits="userSpaceOnUse">
+<feTurbulence type="fractalNoise" baseFrequency=".007" numOctaves="4" seed="11" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="150" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feGaussianBlur in="d" stdDeviation="14"/>
+</filter>
+<filter id="r" x="-40%" y="-40%" width="180%" height="180%" filterUnits="userSpaceOnUse">
+<feTurbulence type="fractalNoise" baseFrequency=".007" numOctaves="4" seed="11" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="150" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feGaussianBlur in="d" stdDeviation="2.2"/>
+</filter>
+<filter id="g" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency=".045" numOctaves="2" seed="3"/>
+<feColorMatrix values="0 0 0 0 .45  0 0 0 0 .35  0 0 0 0 .3  0 0 0 -1.4 .9"/>
+<feComposite in2="SourceGraphic" operator="in"/>
+</filter>
+</defs>
+<g filter="url(#f)">
+<ellipse cx="90" cy="60" rx="380" ry="230" fill="#9aab92" opacity=".32"/>
+<ellipse cx="1150" cy="190" rx="330" ry="210" fill="#c98f86" opacity=".28"/>
+<ellipse cx="1060" cy="860" rx="420" ry="240" fill="#96afc8" opacity=".28"/>
+<ellipse cx="120" cy="780" rx="340" ry="200" fill="#d6aa96" opacity=".26"/>
+<ellipse cx="640" cy="470" rx="260" ry="150" fill="#e8c9b8" opacity=".16"/>
+</g>
+<g filter="url(#r)" fill="none" stroke-width="5">
+<ellipse cx="90" cy="60" rx="380" ry="230" stroke="#9aab92" opacity=".22"/>
+<ellipse cx="1150" cy="190" rx="330" ry="210" stroke="#c98f86" opacity=".2"/>
+<ellipse cx="1060" cy="860" rx="420" ry="240" stroke="#96afc8" opacity=".2"/>
+<ellipse cx="120" cy="780" rx="340" ry="200" stroke="#d6aa96" opacity=".2"/>
+</g>
+<rect width="1200" height="900" fill="#fff" filter="url(#g)" opacity=".08"/>
+</svg>

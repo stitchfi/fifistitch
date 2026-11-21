@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 130" preserveAspectRatio="none">
+<defs>
+<filter id="f" x="-20%" y="-60%" width="140%" height="220%" filterUnits="userSpaceOnUse">
+<feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="3" seed="5" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feGaussianBlur in="d" stdDeviation="3.5"/>
+</filter>
+<filter id="r" x="-20%" y="-60%" width="140%" height="220%" filterUnits="userSpaceOnUse">
+<feTurbulence type="fractalNoise" baseFrequency=".03" numOctaves="3" seed="5" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="34" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feGaussianBlur in="d" stdDeviation=".8"/>
+</filter>
+</defs>
+<path filter="url(#f)" d="M40 72 C110 40 300 38 400 58 C420 70 400 92 360 94 C260 100 120 104 50 96 C30 90 28 80 40 72Z" fill="#c98f86" opacity=".3"/>
+<path filter="url(#f)" d="M120 80 C200 66 300 68 380 76 C360 96 240 100 140 98Z" fill="#9aab92" opacity=".18"/>
+<path filter="url(#r)" d="M40 72 C110 40 300 38 400 58 C420 70 400 92 360 94 C260 100 120 104 50 96 C30 90 28 80 40 72Z" fill="none" stroke="#c98f86" stroke-width="2.5" opacity=".28"/>
+</svg>
